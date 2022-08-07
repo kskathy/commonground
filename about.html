@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="commonground.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel&display=swap" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: Georgia, serif}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+
+
+</style>
+<body>
+
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">About the Creator</h3>
+  <p class="w3-center"><em>Kathy</em></p>
+  <p>Hi, I'm Kathy and I am the web developer and creator of Common Ground. Living in New York City has inspired to create this web friendly site in order to help the homeless, and to provide resources for anyone who is searching for it. By creating this website, I do not intend to solve the homelessness problem in my community, but to provide easily accessible resources for those that want to help and for those that need help. I hope I can further build upon this website to create something that would have a bigger impact on my community. My interest in computer science pushed me to use technology to engage myself in my community, and I hope I can continue doing so in the future. </p>
+  <div class="w3-row">
+    <div class="w3-center w3-padding-large">
+        <img src="images/aboutpic.jpg" class="responsive">>
+      </div>
+
+
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
